@@ -1,0 +1,264 @@
+strong {
+  color: red;
+  font-style: italic;
+}
+h1 {
+  text-shadow: 2px 2px gray;
+}
+
+.di {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+#INDEX {
+  background-image: linear-gradient(red, yellow, green);
+}
+
+body {
+  background-color: rgba(50, 100, 60, 60);
+  opacity: 1;
+}
+fieldset {
+  width: 120px;
+  border-style: dotted;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-bottom: 2px solid red;
+  background-color: wheat;
+}
+input[type="text"]:focus {
+  background: aqua;
+}
+
+input[id="search"] {
+  width: 20%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url("searchicon.jpg");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+
+input[id="search"]:focus {
+  transition: width 0.4s ease-in-out;
+  width: 100%;
+}
+
+datalist {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+
+p {
+  width: 600px;
+  border: 15px solid lightblue;
+  padding: 50px;
+  margin: 20px;
+  border-bottom-left-radius: 45px;
+  border-top-right-radius: 45px;
+}
+
+@keyframes example {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+#imgtry {
+  border: 5px solid;
+  padding: 50px;
+  border-image: url(dice_5.png) 35 round;
+  background-image: url(aqua.jpg);
+  background-clip: padding-box;
+  background-size: cover;
+  transition: width 2s, height 4s;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 3;
+  animation-iteration-count: infinite;
+}
+
+#imgtry:hover {
+  width: 300px;
+  height: 300px;
+}
+
+a:link {
+  color: blue;
+  text-decoration: none;
+}
+a:visited {
+  color: red;
+}
+a:hover {
+  background-color: aqua;
+  text-decoration: none;
+}
+a:active {
+  color: blue;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.flex-container .box {
+  background-color: #f1f1f1;
+  width: 50%;
+  height: 500px;
+  margin: 5px;
+  text-align: center;
+  line-height: 35px;
+  font-size: 10px;
+  overflow-x: scroll;
+}
+
+a {
+  display: inline-block;
+  color: whitesmoke;
+  text-decoration: none;
+  padding: 14px 16px;
+  float: left;
+}
+
+a:hover {
+  background-color: black;
+}
+
+a:active {
+  color: red;
+}
+.nav:link {
+  color: white;
+  border-right: 1px solid wheat;
+
+  border-collapse: collapse;
+}
+
+.nav:visited {
+  color: white;
+}
+
+#ml:link {
+  color: white;
+  border-right: 1px solid wheat;
+
+  border-collapse: collapse;
+}
+#ml:visited {
+  color: white;
+}
+
+.navbar {
+  background-color: maroon;
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .fa-bars {
+  font-size: 30px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .fa-bars {
+  background-color: red;
+}
+
+.dcont {
+  display: none;
+  position: absolute;
+  background-color: darkblue;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dcont a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dcont a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dcont {
+  display: block;
+}
+.cen {
+  margin: auto;
+  background-image: radial-gradient(red, yellow, green);
+  box-shadow: 4px 4px;
+  transform: rotate(-10deg);
+}
+
+.hov {
+  transform: matrix(1, -0.3, 0, 1, 0, 0);
+  transform: rotate(10deg);
+}
+
+#vert {
+  writing-mode: vertical-lr;
+}
